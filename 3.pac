@@ -24,7 +24,7 @@ function FindProxyForURL(url, host) {
     for (var i = 0; i < googleDomains.length; i++) {
         if (shExpMatch(host, googleDomains[i])) {
             // Return SOCKS5 proxy configuration for Google-related traffic
-            return "SOCKS5 127.0.01:4444";
+            return "SOCKS5 127.0.0.1:4444";
         }
     }
 
@@ -32,7 +32,7 @@ function FindProxyForURL(url, host) {
     for (var i = 0; i < discordDomains.length; i++) {
         if (shExpMatch(host, discordDomains[i])) {
             // Return SOCKS5 proxy configuration for Discord-related traffic
-            return "SOCKS5 127.0.01:4444";
+            return "SOCKS5 127.0.0.1:4444";
         }
     }
 
